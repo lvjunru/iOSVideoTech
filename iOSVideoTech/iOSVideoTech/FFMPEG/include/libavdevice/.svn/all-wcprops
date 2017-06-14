@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/SKYBERCAM/!svn/ver/2/trunk/iOS/Foxeer1.5/Skyber/ThirdLibs/kxMovie/universal/include/libavdevice
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/SKYBERCAM/!svn/ver/2/trunk/iOS/Foxeer1.5/Skyber/ThirdLibs/kxMovie/universal/include/libavdevice/version.h
+END
+avdevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/SKYBERCAM/!svn/ver/2/trunk/iOS/Foxeer1.5/Skyber/ThirdLibs/kxMovie/universal/include/libavdevice/avdevice.h
+END

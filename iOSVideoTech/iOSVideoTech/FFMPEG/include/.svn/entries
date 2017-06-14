@@ -1,0 +1,49 @@
+10
+
+dir
+9
+https://zhongch@192.168.1.10:8443/svn/SKYBERCAM/trunk/iOS/Foxeer1.5/Skyber/ThirdLibs/kxMovie/universal/include
+https://zhongch@192.168.1.10:8443/svn/SKYBERCAM
+
+
+
+2016-11-17T06:02:47.261343Z
+2
+chenb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f1a6660c-c195-534e-8f92-c7346495e25d
+
+libavfilter
+dir
+
+libavformat
+dir
+
+libswscale
+dir
+
+libswresample
+dir
+
+libavcodec
+dir
+
+libavutil
+dir
+
+libavdevice
+dir
+
