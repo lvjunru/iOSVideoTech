@@ -11,7 +11,6 @@
 #import "cellModel.h"
 #import "ChangeToH264VC.h"
 #import "VideoCaptureVC.h"
-#import "VTBEncode264VC.h"
 
 @interface DemoVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -60,13 +59,10 @@ static NSString * const collectionCellId = @"collectionCell";
 {
     cellModel * getH264Model = [[cellModel alloc] initWithTitle:@"FFMpeg视频转H264"];
     
-    cellModel * captureModel = [[cellModel alloc] initWithTitle:@"捕获iPhone视频流"];
-    
-    cellModel * VTBModel = [[cellModel alloc] initWithTitle:@"利用VideoToolBox编码264"];
+    cellModel * captureModel = [[cellModel alloc] initWithTitle:@"捕获iPhone视频流&解码保存"];
     
     [self.dataArray addObject:getH264Model];
     [self.dataArray addObject:captureModel];
-    [self.dataArray addObject:VTBModel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,18 +107,11 @@ static NSString * const collectionCellId = @"collectionCell";
         [self.navigationController pushViewController:change264VC animated:YES];
     }
     
-    if ([model.title isEqualToString:@"捕获iPhone视频流"]) {
+    if ([model.title isEqualToString:@"捕获iPhone视频流&解码保存"]) {
         VideoCaptureVC * captureVC = [[VideoCaptureVC alloc] init];
         captureVC.cellM = model;
         [self.navigationController pushViewController:captureVC animated:YES];
     }
-    
-    if ([model.title isEqualToString:@"利用VideoToolBox编码264"]) {
-        VTBEncode264VC * VTBVC = [[VTBEncode264VC alloc] init];
-        VTBVC.cellM = model;
-        [self.navigationController pushViewController:VTBVC animated:YES];
-    }
-    
     
 }
 

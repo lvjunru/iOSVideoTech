@@ -157,7 +157,6 @@
     for (AVCaptureDevice *device in devices)
     {
         if ([device position] == position) return device;
-        
     }
     return nil;
 }

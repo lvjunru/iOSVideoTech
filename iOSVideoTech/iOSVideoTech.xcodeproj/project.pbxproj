@@ -13,7 +13,6 @@
 		4248A4BD1EDCF4A60076C43E /* VideoCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248A4BC1EDCF4A60076C43E /* VideoCaptureView.m */; };
 		4248A4BF1EDCF4B70076C43E /* VideoCaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4248A4BE1EDCF4B70076C43E /* VideoCaptureView.xib */; };
 		4248A4C21EDCF8650076C43E /* baseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248A4C11EDCF8650076C43E /* baseController.m */; };
-		4248A4C51EDE53400076C43E /* VTBEncode264VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248A4C41EDE53400076C43E /* VTBEncode264VC.m */; };
 		42C4902B1EE94D6F0067BFFB /* VTBEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4902A1EE94D6F0067BFFB /* VTBEncoder.m */; };
 		42E7A9311ECD2D5A004D5EE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9301ECD2D5A004D5EE6 /* main.m */; };
 		42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9331ECD2D5A004D5EE6 /* AppDelegate.m */; };
@@ -77,8 +76,6 @@
 		4248A4BE1EDCF4B70076C43E /* VideoCaptureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCaptureView.xib; sourceTree = "<group>"; };
 		4248A4C01EDCF8650076C43E /* baseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseController.h; sourceTree = "<group>"; };
 		4248A4C11EDCF8650076C43E /* baseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseController.m; sourceTree = "<group>"; };
-		4248A4C31EDE53400076C43E /* VTBEncode264VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBEncode264VC.h; sourceTree = "<group>"; };
-		4248A4C41EDE53400076C43E /* VTBEncode264VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBEncode264VC.m; sourceTree = "<group>"; };
 		42C490291EE94D6F0067BFFB /* VTBEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBEncoder.h; sourceTree = "<group>"; };
 		42C4902A1EE94D6F0067BFFB /* VTBEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBEncoder.m; sourceTree = "<group>"; };
 		42E7A92C1ECD2D5A004D5EE6 /* iOSVideoTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVideoTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,8 +580,6 @@
 				42E7A9661ECD2DC6004D5EE6 /* ChangeToH264VC.m */,
 				4248A4B81EDCF4610076C43E /* VideoCaptureVC.h */,
 				4248A4B91EDCF4610076C43E /* VideoCaptureVC.m */,
-				4248A4C31EDE53400076C43E /* VTBEncode264VC.h */,
-				4248A4C41EDE53400076C43E /* VTBEncode264VC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -759,7 +754,6 @@
 				42E7A9FF1ECD322A004D5EE6 /* SVProgressAnimatedView.m in Sources */,
 				42E7A9711ECD2DC6004D5EE6 /* ChangeToH264View.m in Sources */,
 				42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */,
-				4248A4C51EDE53400076C43E /* VTBEncode264VC.m in Sources */,
 				4248A4BD1EDCF4A60076C43E /* VideoCaptureView.m in Sources */,
 				42E7AA011ECD322A004D5EE6 /* SVProgressHUD.m in Sources */,
 				423DB24D1EEA9D6F00101744 /* SPS_FileTool.m in Sources */,
