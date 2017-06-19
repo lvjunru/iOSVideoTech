@@ -1,17 +1,13 @@
 //
-//  baseController.m
+//  BaseController.m
 //  iOSVideoTech
 //
-//  Created by ZhongSpace on 2017/5/30.
+//  Created by ZhongSpace on 2017/6/19.
 //  Copyright © 2017年 ZhongSpace. All rights reserved.
 //
 
 #import "BaseController.h"
-#import "CellModel.h"
-#import "TableViewCell.h"
-
-
-static NSString * talbeViewCellID = @"talbeViewCellID";
+#import "iOSVideoTechConst.h"
 
 @interface BaseController ()
 
@@ -21,33 +17,25 @@ static NSString * talbeViewCellID = @"talbeViewCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TableViewCell class]) bundle:nil] forCellReuseIdentifier:talbeViewCellID];
-    
+    //设置返回按钮的样式
+    UIButton * leftButton  = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50,50)];
+    [leftButton setTitle:@"BACK" forState:UIControlStateNormal];
+    [leftButton setTitleColor:globalTextColor forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem * leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
+
+-(void)goBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
--(void)setCellM:(CellModel *)cellM
-{
-    _cellM = cellM;
-    self.title = cellM.Navtitle;
-}
-
-
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    TableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:talbeViewCellID];
-    cell.textLabel.text = self.cellM.cellTitle;
-    cell.detailTextLabel.text = self.cellM.cellDetailTitle;
-    return cell;
-}
-
 
 /*
 #pragma mark - Navigation

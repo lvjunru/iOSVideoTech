@@ -9,7 +9,7 @@
 #import "DemoVC.h"
 #import "CollectionCell.h"
 #import "CellModel.h"
-#import "ChangeToH264VC.h"
+#import "FFMpegCatalogueVC.h"
 #import "VideoCaptureVC.h"
 
 @interface DemoVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -43,7 +43,8 @@ static NSString * const CollectionCellId = @"CollectionCell";
     layout.minimumLineSpacing = 5;
     
      UICollectionView *  collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    collectionView.backgroundColor  = [UIColor colorWithRed:99/255.0 green:99/255.0 blue:99/255.0 alpha:1.0];
+    collectionView.backgroundColor = [UIColor whiteColor];
+//    collectionView.backgroundColor  = [UIColor colorWithRed:99/255.0 green:99/255.0 blue:99/255.0 alpha:1.0];
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CollectionCell class]) bundle:nil] forCellWithReuseIdentifier:CollectionCellId];
     collectionView.dataSource = self;
     collectionView.delegate  = self;
@@ -105,14 +106,14 @@ static NSString * const CollectionCellId = @"CollectionCell";
     CellModel * model = self.dataArray[indexPath.row];
     
     if ([model.Navtitle isEqualToString:@"FFMpeg集合"]) {
-        ChangeToH264VC * change264VC = [[ChangeToH264VC alloc] init];
-        change264VC.cellM = model;
-        [self.navigationController pushViewController:change264VC animated:YES];
+        FFMpegCatalogueVC * catalogueVC = [[FFMpegCatalogueVC alloc] init];
+        catalogueVC.title = @"FFMpeg集合";
+        [self.navigationController pushViewController:catalogueVC animated:YES];
     }
     
     if ([model.Navtitle isEqualToString:@"Navtive集合"]) {
         VideoCaptureVC * captureVC = [[VideoCaptureVC alloc] init];
-        captureVC.cellM = model;
+        
         [self.navigationController pushViewController:captureVC animated:YES];
     }
     

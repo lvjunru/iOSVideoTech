@@ -12,7 +12,7 @@
 		422E8BD91EF7B5C500AAA50F /* ChangeToH264VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BD81EF7B5C500AAA50F /* ChangeToH264VC.m */; };
 		422E8BDD1EF7B5D000AAA50F /* ChangeToH264View.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BDB1EF7B5D000AAA50F /* ChangeToH264View.m */; };
 		422E8BDE1EF7B5D000AAA50F /* ChangeToH264View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422E8BDC1EF7B5D000AAA50F /* ChangeToH264View.xib */; };
-		422E8BE31EF7B5E200AAA50F /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BE01EF7B5E200AAA50F /* BaseController.m */; };
+		422E8BE31EF7B5E200AAA50F /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BE01EF7B5E200AAA50F /* BaseTableViewController.m */; };
 		422E8BE41EF7B5E200AAA50F /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BE21EF7B5E200AAA50F /* DemoVC.m */; };
 		422E8BE71EF7B5EA00AAA50F /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BE61EF7B5EA00AAA50F /* CellModel.m */; };
 		422E8BEB1EF7B5F300AAA50F /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BE91EF7B5F300AAA50F /* TableViewCell.m */; };
@@ -22,6 +22,11 @@
 		422E8BF71EF7B60B00AAA50F /* VideoCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BF31EF7B60B00AAA50F /* VideoCaptureVC.m */; };
 		422E8BF81EF7B60B00AAA50F /* VideoCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BF51EF7B60B00AAA50F /* VideoCaptureView.m */; };
 		422E8BF91EF7B60B00AAA50F /* VideoCaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422E8BF61EF7B60B00AAA50F /* VideoCaptureView.xib */; };
+		422E8BFC1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8BFB1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m */; };
+		422E8C021EF7C12900AAA50F /* NativeCatalogueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C011EF7C12900AAA50F /* NativeCatalogueVC.m */; };
+		422E8C051EF7C1CD00AAA50F /* CustomNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C041EF7C1CD00AAA50F /* CustomNavVC.m */; };
+		422E8C081EF7C5AC00AAA50F /* iOSVideoTechConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C071EF7C5AC00AAA50F /* iOSVideoTechConst.m */; };
+		422E8C0B1EF7C71C00AAA50F /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C0A1EF7C71C00AAA50F /* BaseController.m */; };
 		423DB24D1EEA9D6F00101744 /* SPS_FileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DB24C1EEA9D6F00101744 /* SPS_FileTool.m */; };
 		42E7A9311ECD2D5A004D5EE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9301ECD2D5A004D5EE6 /* main.m */; };
 		42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9331ECD2D5A004D5EE6 /* AppDelegate.m */; };
@@ -76,8 +81,8 @@
 		422E8BDA1EF7B5D000AAA50F /* ChangeToH264View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeToH264View.h; sourceTree = "<group>"; };
 		422E8BDB1EF7B5D000AAA50F /* ChangeToH264View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeToH264View.m; sourceTree = "<group>"; };
 		422E8BDC1EF7B5D000AAA50F /* ChangeToH264View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeToH264View.xib; sourceTree = "<group>"; };
-		422E8BDF1EF7B5E200AAA50F /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		422E8BE01EF7B5E200AAA50F /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		422E8BDF1EF7B5E200AAA50F /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		422E8BE01EF7B5E200AAA50F /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		422E8BE11EF7B5E200AAA50F /* DemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
 		422E8BE21EF7B5E200AAA50F /* DemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVC.m; sourceTree = "<group>"; };
 		422E8BE51EF7B5EA00AAA50F /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
@@ -93,6 +98,16 @@
 		422E8BF41EF7B60B00AAA50F /* VideoCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCaptureView.h; sourceTree = "<group>"; };
 		422E8BF51EF7B60B00AAA50F /* VideoCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCaptureView.m; sourceTree = "<group>"; };
 		422E8BF61EF7B60B00AAA50F /* VideoCaptureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCaptureView.xib; sourceTree = "<group>"; };
+		422E8BFA1EF7BB2C00AAA50F /* FFMpegCatalogueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFMpegCatalogueVC.h; sourceTree = "<group>"; };
+		422E8BFB1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFMpegCatalogueVC.m; sourceTree = "<group>"; };
+		422E8C001EF7C12900AAA50F /* NativeCatalogueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeCatalogueVC.h; sourceTree = "<group>"; };
+		422E8C011EF7C12900AAA50F /* NativeCatalogueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeCatalogueVC.m; sourceTree = "<group>"; };
+		422E8C031EF7C1CD00AAA50F /* CustomNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavVC.h; sourceTree = "<group>"; };
+		422E8C041EF7C1CD00AAA50F /* CustomNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavVC.m; sourceTree = "<group>"; };
+		422E8C061EF7C5AC00AAA50F /* iOSVideoTechConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVideoTechConst.h; sourceTree = "<group>"; };
+		422E8C071EF7C5AC00AAA50F /* iOSVideoTechConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSVideoTechConst.m; sourceTree = "<group>"; };
+		422E8C091EF7C71C00AAA50F /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		422E8C0A1EF7C71C00AAA50F /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		423DB24B1EEA9D6F00101744 /* SPS_FileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPS_FileTool.h; sourceTree = "<group>"; };
 		423DB24C1EEA9D6F00101744 /* SPS_FileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPS_FileTool.m; sourceTree = "<group>"; };
 		42E7A92C1ECD2D5A004D5EE6 /* iOSVideoTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVideoTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +306,8 @@
 			children = (
 				422E8BD71EF7B5C500AAA50F /* ChangeToH264VC.h */,
 				422E8BD81EF7B5C500AAA50F /* ChangeToH264VC.m */,
+				422E8BFA1EF7BB2C00AAA50F /* FFMpegCatalogueVC.h */,
+				422E8BFB1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -305,11 +322,9 @@
 		422E8BCF1EF7B35A00AAA50F /* NativeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				422E8BF21EF7B60B00AAA50F /* VideoCaptureVC.h */,
-				422E8BF31EF7B60B00AAA50F /* VideoCaptureVC.m */,
-				422E8BF41EF7B60B00AAA50F /* VideoCaptureView.h */,
-				422E8BF51EF7B60B00AAA50F /* VideoCaptureView.m */,
-				422E8BF61EF7B60B00AAA50F /* VideoCaptureView.xib */,
+				422E8BFF1EF7C0D900AAA50F /* Model */,
+				422E8BFE1EF7C0D400AAA50F /* VC */,
+				422E8BFD1EF7C0CE00AAA50F /* View */,
 				422E8BD41EF7B4E600AAA50F /* VTBEncoder.h */,
 				422E8BD51EF7B4E600AAA50F /* VTBEncoder.m */,
 			);
@@ -322,6 +337,8 @@
 				422E8BD31EF7B3B400AAA50F /* Model */,
 				422E8BD21EF7B3AF00AAA50F /* VC */,
 				422E8BD11EF7B3A500AAA50F /* View */,
+				422E8C061EF7C5AC00AAA50F /* iOSVideoTechConst.h */,
+				422E8C071EF7C5AC00AAA50F /* iOSVideoTechConst.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -342,10 +359,14 @@
 		422E8BD21EF7B3AF00AAA50F /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				422E8BDF1EF7B5E200AAA50F /* BaseController.h */,
-				422E8BE01EF7B5E200AAA50F /* BaseController.m */,
+				422E8BDF1EF7B5E200AAA50F /* BaseTableViewController.h */,
+				422E8BE01EF7B5E200AAA50F /* BaseTableViewController.m */,
 				422E8BE11EF7B5E200AAA50F /* DemoVC.h */,
 				422E8BE21EF7B5E200AAA50F /* DemoVC.m */,
+				422E8C031EF7C1CD00AAA50F /* CustomNavVC.h */,
+				422E8C041EF7C1CD00AAA50F /* CustomNavVC.m */,
+				422E8C091EF7C71C00AAA50F /* BaseController.h */,
+				422E8C0A1EF7C71C00AAA50F /* BaseController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -355,6 +376,34 @@
 			children = (
 				422E8BE51EF7B5EA00AAA50F /* CellModel.h */,
 				422E8BE61EF7B5EA00AAA50F /* CellModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		422E8BFD1EF7C0CE00AAA50F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				422E8BF41EF7B60B00AAA50F /* VideoCaptureView.h */,
+				422E8BF51EF7B60B00AAA50F /* VideoCaptureView.m */,
+				422E8BF61EF7B60B00AAA50F /* VideoCaptureView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		422E8BFE1EF7C0D400AAA50F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				422E8BF21EF7B60B00AAA50F /* VideoCaptureVC.h */,
+				422E8BF31EF7B60B00AAA50F /* VideoCaptureVC.m */,
+				422E8C001EF7C12900AAA50F /* NativeCatalogueVC.h */,
+				422E8C011EF7C12900AAA50F /* NativeCatalogueVC.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		422E8BFF1EF7C0D900AAA50F /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -813,16 +862,21 @@
 				422E8BF81EF7B60B00AAA50F /* VideoCaptureView.m in Sources */,
 				42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */,
 				42E7AA011ECD322A004D5EE6 /* SVProgressHUD.m in Sources */,
+				422E8C021EF7C12900AAA50F /* NativeCatalogueVC.m in Sources */,
 				423DB24D1EEA9D6F00101744 /* SPS_FileTool.m in Sources */,
+				422E8C081EF7C5AC00AAA50F /* iOSVideoTechConst.m in Sources */,
+				422E8C0B1EF7C71C00AAA50F /* BaseController.m in Sources */,
 				42E7A9FE1ECD322A004D5EE6 /* SVIndefiniteAnimatedView.m in Sources */,
 				422E8BD91EF7B5C500AAA50F /* ChangeToH264VC.m in Sources */,
 				422E8BD61EF7B4E600AAA50F /* VTBEncoder.m in Sources */,
-				422E8BE31EF7B5E200AAA50F /* BaseController.m in Sources */,
+				422E8BE31EF7B5E200AAA50F /* BaseTableViewController.m in Sources */,
 				42E7AA021ECD322A004D5EE6 /* SVRadialGradientLayer.m in Sources */,
 				422E8BE41EF7B5E200AAA50F /* DemoVC.m in Sources */,
 				422E8BEB1EF7B5F300AAA50F /* TableViewCell.m in Sources */,
 				42E7A9FD1ECD322A004D5EE6 /* README.md in Sources */,
+				422E8C051EF7C1CD00AAA50F /* CustomNavVC.m in Sources */,
 				422E8BF01EF7B5FA00AAA50F /* CollectionCell.m in Sources */,
+				422E8BFC1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m in Sources */,
 				42E7A9311ECD2D5A004D5EE6 /* main.m in Sources */,
 				422E8BF71EF7B60B00AAA50F /* VideoCaptureVC.m in Sources */,
 			);

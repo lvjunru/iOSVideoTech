@@ -1,5 +1,5 @@
 //
-//  TableViewCell.h
+//  CustomNavVC.h
 //  iOSVideoTech
 //
 //  Created by ZhongSpace on 2017/6/19.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class CellModel;
-
-@interface TableViewCell : UITableViewCell
-
-
-@property(nonatomic,weak)CellModel * cellM;
+@interface CustomNavVC : UINavigationController
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2017年 ZhongSpace. All rights reserved.
 //
 
-#import "baseController.h"
+#import "BaseController.h"
 
 
 @interface ChangeToH264VC :BaseController

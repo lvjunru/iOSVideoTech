@@ -7,12 +7,21 @@
 //
 
 #import "TableViewCell.h"
+#import "CellModel.h"
 
 @implementation TableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+}
+
+-(void)setCellM:(CellModel *)cellM
+{
+    _cellM = cellM;
+    self.textLabel.text = cellM.cellTitle;
+    self.detailTextLabel.text = cellM.cellDetailTitle;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
