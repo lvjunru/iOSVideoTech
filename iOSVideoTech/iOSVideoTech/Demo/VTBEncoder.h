@@ -11,7 +11,16 @@
 
 @interface VTBEncoder : NSObject
 
+/**
+ * path 指定编码的路径
+ */
+-(instancetype)initWithEncodePath:(NSString *)path;
+
+/**
+ * 编码CMSampleBufferRef
+ */
 - (void)encode:(CMSampleBufferRef)sampleBuffer;
+
 
 - (void)endEncode;
 

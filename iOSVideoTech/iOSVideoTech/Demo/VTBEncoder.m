@@ -10,6 +10,9 @@
 #import <VideoToolbox/VideoToolbox.h>
 #import "SPS_FileTool.h"
 
+
+static NSString * const defaulttName  = @"default.h264";
+
 @interface VTBEncoder()
 
 /** 文件写入对象 */
@@ -27,23 +30,45 @@
 
 @implementation VTBEncoder
 
+//-(instancetype)initWithEncodePath:(NSString *)path
+//{
+//    if (self = [super init]) {
+//        
+//        if (path) {
+//            // 3.创建对象
+//            self.fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
+//        }else
+//        {
+//            NSString * filePath =  [SPS_FileTool createDocumentFile:defaulttName replace:YES];
+//            if (filePath) {
+//                // 3.创建对象
+//                self.fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+//            }
+//        }
+//        
+//        self.frameID = 0;
+//    }
+//    return self;
+//}
+
 -(instancetype)init
 {
     if (self = [super init]) {
-        
-        NSString * filePath =  [SPS_FileTool createDocumentFile:@"abc.h264" replace:YES];
+        NSString * filePath =  [SPS_FileTool createDocumentFile:defaulttName replace:YES];
         if (filePath) {
             // 3.创建对象
             self.fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
         }
-        
-        self.frameID = 0;
+        [self setupVideoCompressionWidth:0 Height:0];
     }
     return self;
 }
 
 -(void)setupVideoCompressionWidth:(CGFloat)width Height:(CGFloat)height
 {
+    
+    self.frameID = 0;
+    
     if (width <=0)
         width = [UIScreen mainScreen].bounds.size.width;
     if (height <=0)
@@ -154,7 +179,7 @@ void VTCompressionCallback(void *outputCallbackRefCon, void *sourceFrameRefCon, 
 {
     // 1.拼接NALU的header
     const char bytes[] = {0x00,0x00,0x00,0x01};
-    size_t length = (sizeof bytes) - 1;
+    size_t length = sizeof bytes;
     NSData *ByteHeader = [NSData dataWithBytes:bytes length:length];
     
     // 2.将NALU的头&NALU的体写入文件
@@ -170,8 +195,8 @@ void VTCompressionCallback(void *outputCallbackRefCon, void *sourceFrameRefCon, 
     NSLog(@"gotEncodedData %d", (int)[data length]);
     if (self.fileHandle != NULL)
     {
-        const char bytes[] = "\x00\x00\x00\x01";
-        size_t length = (sizeof bytes) - 1; //string literals have implicit trailing '\0'
+        const char bytes[] = {0x00,0x00,0x00,0x01};
+        size_t length = sizeof bytes; //string literals have implicit trailing '\0'
         NSData *ByteHeader = [NSData dataWithBytes:bytes length:length];
         [self.fileHandle writeData:ByteHeader];
         [self.fileHandle writeData:data];
@@ -179,6 +204,10 @@ void VTCompressionCallback(void *outputCallbackRefCon, void *sourceFrameRefCon, 
 }
 
 - (void)encode:(CMSampleBufferRef)sampleBuffer {
+    
+    if (!self.compressionSession) {
+        [self setupVideoCompressionWidth:0 Height:0];
+    }
     // 1.将sampleBuffer转成imageBuffer
     CVImageBufferRef imageBuffer = (CVImageBufferRef)CMSampleBufferGetImageBuffer(sampleBuffer);
     

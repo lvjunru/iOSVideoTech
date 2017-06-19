@@ -47,5 +47,13 @@
         [self.delegate VideoCaptureView:self switchButtonClick:sender];
     }
 }
+- (IBAction)saveButtonClikc:(UIButton *)sender {
+    
+    sender.selected = !sender.selected;
+    if ([self.delegate respondsToSelector:@selector(VideoCaptureView:saveButtonClick:)]) {
+        [self.delegate VideoCaptureView:self saveButtonClick:sender];
+    }
+    
+}
 
 @end

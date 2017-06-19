@@ -60,7 +60,6 @@
     self.shouldWriteToFile = NO;
     
     self.encoder = [[VTBEncoder alloc] init];
-    
 }
 
 
@@ -170,23 +169,21 @@
     [self.encoder endEncode];
 }
 
+
 #pragma mark AVCaptureVideoDataOutputSampleBufferDelegate
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    NSLog(@"didDropSampleBuffer");
+    //didDropSampleBuffer丢弃的帧
+   
     
-    if (self.shouldWriteToFile) {
-        [self.encoder encode:sampleBuffer];
-    }else
-    {
-        [self.encoder endEncode];
-    }
 }
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    NSLog(@"didOutputSampleBuffer");
+    
+    [self.encoder encode:sampleBuffer];
+    
 }
 
 
