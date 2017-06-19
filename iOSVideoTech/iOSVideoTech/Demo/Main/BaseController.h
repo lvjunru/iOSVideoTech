@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@class cellModel;
+@class CellModel;
 
-@interface baseController : UIViewController
+@interface BaseController : UITableViewController
 
-@property(nonatomic,weak)cellModel * cellM;
+@property(nonatomic,weak)CellModel * cellM;
 
 @end

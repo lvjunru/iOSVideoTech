@@ -1,15 +1,15 @@
 //
-//  collectionCell.m
+//  CollectionCell.m
 //  简单的ffmpeg播放器
 //
 //  Created by ZhongSpace on 2017/5/17.
 //  Copyright © 2017年 ZhongSpace. All rights reserved.
 //
 
-#import "collectionCell.h"
-#import "cellModel.h"
+#import "CollectionCell.h"
+#import "CellModel.h"
 
-@interface collectionCell ()
+@interface CollectionCell ()
 
 
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation collectionCell
+@implementation CollectionCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -28,11 +28,11 @@
     
 }
 
--(void)setModel:(cellModel *)model
+-(void)setModel:(CellModel *)model
 {
     _model = model;
     
-    self.infoLabel.text = model.title;
+    self.infoLabel.text = model.Navtitle;
 }
 
 @end

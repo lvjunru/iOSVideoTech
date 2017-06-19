@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class cellModel;
+@class  CellModel;
 
-@interface collectionCell : UICollectionViewCell
+@interface CollectionCell : UICollectionViewCell
 
-@property(nonatomic,weak)cellModel * model;
+@property(nonatomic,weak)CellModel * model;
 
 @end

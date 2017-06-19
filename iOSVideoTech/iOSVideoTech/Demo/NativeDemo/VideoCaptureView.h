@@ -17,9 +17,6 @@
 
 -(void)VideoCaptureView:(VideoCaptureView *)view switchButtonClick:(UIButton *)btn;
 
-
--(void)VideoCaptureView:(VideoCaptureView *)view saveButtonClick:(UIButton *)btn;
-
 @end
 
 @interface VideoCaptureView : UIView

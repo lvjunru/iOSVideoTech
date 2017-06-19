@@ -1,16 +1,14 @@
 //
-//  ChangeToH264.h
+//  cellModel.m
 //  简单的ffmpeg播放器
 //
 //  Created by ZhongSpace on 2017/5/17.
 //  Copyright © 2017年 ZhongSpace. All rights reserved.
 //
 
-#import "baseController.h"
+#import "CellModel.h"
 
-
-@interface ChangeToH264VC :baseController
-
+@implementation CellModel
 
 
 @end

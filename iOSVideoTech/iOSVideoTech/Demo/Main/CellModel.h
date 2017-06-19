@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface cellModel : NSObject
+@interface CellModel : NSObject
 
-@property(nonatomic,copy)NSString * title;
+@property(nonatomic,copy)NSString * Navtitle;
 
--(instancetype)initWithTitle:(NSString *)title;
+@property(nonatomic,copy)NSString * cellTitle;
 
+@property(nonatomic,copy)NSString * cellDetailTitle;
 
 
 @end

@@ -7,8 +7,8 @@
 //
 
 #import "DemoVC.h"
-#import "collectionCell.h"
-#import "cellModel.h"
+#import "CollectionCell.h"
+#import "CellModel.h"
 #import "ChangeToH264VC.h"
 #import "VideoCaptureVC.h"
 
@@ -30,7 +30,7 @@
     return _dataArray;
 }
 
-static NSString * const collectionCellId = @"collectionCell";
+static NSString * const CollectionCellId = @"CollectionCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,7 +44,7 @@ static NSString * const collectionCellId = @"collectionCell";
     
      UICollectionView *  collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     collectionView.backgroundColor  = [UIColor colorWithRed:99/255.0 green:99/255.0 blue:99/255.0 alpha:1.0];
-    [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([collectionCell class]) bundle:nil] forCellWithReuseIdentifier:collectionCellId];
+    [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CollectionCell class]) bundle:nil] forCellWithReuseIdentifier:CollectionCellId];
     collectionView.dataSource = self;
     collectionView.delegate  = self;
     
@@ -57,9 +57,12 @@ static NSString * const collectionCellId = @"collectionCell";
 
 -(void)setupData
 {
-    cellModel * getH264Model = [[cellModel alloc] initWithTitle:@"FFMpeg视频转H264"];
+    CellModel * getH264Model = [[CellModel alloc] init];
+    getH264Model.Navtitle = @"FFMpeg集合";
     
-    cellModel * captureModel = [[cellModel alloc] initWithTitle:@"捕获iPhone视频流&解码保存"];
+    
+    CellModel * captureModel = [[CellModel alloc] init];
+    captureModel.Navtitle = @"Navtive集合";
     
     [self.dataArray addObject:getH264Model];
     [self.dataArray addObject:captureModel];
@@ -77,8 +80,8 @@ static NSString * const collectionCellId = @"collectionCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    collectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionCellId forIndexPath:indexPath];
-    cellModel * model = self.dataArray[indexPath.row];
+    CollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionCellId forIndexPath:indexPath];
+    CellModel * model = self.dataArray[indexPath.row];
     cell.model = model;
     return cell;
 }
@@ -99,15 +102,15 @@ static NSString * const collectionCellId = @"collectionCell";
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    cellModel * model = self.dataArray[indexPath.row];
+    CellModel * model = self.dataArray[indexPath.row];
     
-    if ([model.title isEqualToString:@"FFMpeg视频转H264"]) {
+    if ([model.Navtitle isEqualToString:@"FFMpeg集合"]) {
         ChangeToH264VC * change264VC = [[ChangeToH264VC alloc] init];
         change264VC.cellM = model;
         [self.navigationController pushViewController:change264VC animated:YES];
     }
     
-    if ([model.title isEqualToString:@"捕获iPhone视频流&解码保存"]) {
+    if ([model.Navtitle isEqualToString:@"Navtive集合"]) {
         VideoCaptureVC * captureVC = [[VideoCaptureVC alloc] init];
         captureVC.cellM = model;
         [self.navigationController pushViewController:captureVC animated:YES];

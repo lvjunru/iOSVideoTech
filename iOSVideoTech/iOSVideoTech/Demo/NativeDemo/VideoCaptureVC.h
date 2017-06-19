@@ -8,9 +8,9 @@
 
 
 
-#import "baseController.h"
+#import "BaseController.h"
 
-@interface VideoCaptureVC : baseController
+@interface VideoCaptureVC : BaseController
 
 
 @end
