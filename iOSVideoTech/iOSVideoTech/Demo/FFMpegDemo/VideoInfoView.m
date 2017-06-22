@@ -25,15 +25,33 @@
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    
+}
+
+-(void)willMoveToSuperview:(UIView *)newSuperview
+{
     self.tableView.delegate = self.delegate;
     self.tableView.dataSource = self.dataSource;
-    self.textField.delegate = self;
+}
+
+- (IBAction)confirmButtonClick:(UIButton *)sender {
+    
+    if (self.textDidChangeBlock) {
+        self.textDidChangeBlock(self.textField.text);
+    }
 }
 
 
+-(void)textChanged:(UITextField *)textField
+{
+    
+}
 
 
-
-
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    [self endEditing:YES];
+    return [super hitTest:point withEvent:event];
+}
 
 @end

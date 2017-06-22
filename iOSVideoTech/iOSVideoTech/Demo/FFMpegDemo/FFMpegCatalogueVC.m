@@ -9,6 +9,7 @@
 #import "FFMpegCatalogueVC.h"
 #import "CellModel.h"
 #import "ChangeToH264VC.h"
+#import "VideoInfoVC.h"
 
 @interface FFMpegCatalogueVC ()
 
@@ -56,6 +57,13 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CellModel * model = self.dataArray[indexPath.row];
+    
+    if ([model.Navtitle isEqualToString:@"FFMpeg获取视频信息"]) {
+        VideoInfoVC * videoInfoVC = [[VideoInfoVC alloc] init];
+        videoInfoVC.title = @"FFMpeg获取视频信息";
+        [self.navigationController pushViewController:videoInfoVC animated:YES];
+    }
+    
     if ([model.Navtitle isEqualToString:@"FFMpeg读取视频H264裸流"]) {
         ChangeToH264VC * change264VC = [[ChangeToH264VC alloc] init];
         change264VC.title = @"FFMpeg读取视频H264裸流";

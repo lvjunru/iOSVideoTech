@@ -26,6 +26,18 @@
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 
+-(void)showAlert:(NSString *)msg
+{
+    
+    UIAlertAction * action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"信息" message:msg preferredStyle:UIAlertControllerStyleAlert];
+    [alertVC addAction:action];
+    [self.navigationController presentViewController:alertVC animated:YES completion:nil];
+    
+}
+
 -(void)goBack
 {
     [self.navigationController popViewControllerAnimated:YES];

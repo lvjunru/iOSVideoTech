@@ -12,15 +12,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoInfoView">
-            <rect key="frame" x="0.0" y="0.0" width="358" height="421"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ij4-LY-jkg">
-                    <rect key="frame" x="0.0" y="0.0" width="358" height="361"/>
+                    <rect key="frame" x="0.0" y="124" width="375" height="543"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入路径" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-rG-zhA">
-                    <rect key="frame" x="0.0" y="376" width="358" height="45"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入路径" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-rG-zhA">
+                    <rect key="frame" x="0.0" y="64" width="295" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="jhY-UX-nUK"/>
                     </constraints>
@@ -28,16 +28,31 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-Q4-j3h">
+                    <rect key="frame" x="305" y="69.5" width="60" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="mgQ-Xo-rYu"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lmx-v4-UTq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="YRf-rG-zhA" secondAttribute="bottom" id="6WC-JD-0XD"/>
+                <constraint firstAttribute="trailing" secondItem="MPL-Q4-j3h" secondAttribute="trailing" constant="10" id="4Kk-py-dH9"/>
                 <constraint firstItem="Ij4-LY-jkg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Ls-an-zxO"/>
-                <constraint firstAttribute="bottom" secondItem="Ij4-LY-jkg" secondAttribute="bottom" constant="60" id="bdQ-SV-eUd"/>
+                <constraint firstAttribute="bottom" secondItem="Ij4-LY-jkg" secondAttribute="bottom" id="bdQ-SV-eUd"/>
                 <constraint firstAttribute="trailing" secondItem="Ij4-LY-jkg" secondAttribute="trailing" id="dKC-fT-SY7"/>
-                <constraint firstAttribute="trailing" secondItem="YRf-rG-zhA" secondAttribute="trailing" id="dKn-O5-ayo"/>
+                <constraint firstAttribute="trailing" secondItem="YRf-rG-zhA" secondAttribute="trailing" constant="80" id="dKn-O5-ayo"/>
                 <constraint firstItem="YRf-rG-zhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="di8-xN-jaC"/>
-                <constraint firstItem="Ij4-LY-jkg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lUI-3P-ysc"/>
+                <constraint firstItem="Ij4-LY-jkg" firstAttribute="top" secondItem="YRf-rG-zhA" secondAttribute="bottom" constant="15" id="rqr-oX-Rb0"/>
+                <constraint firstItem="YRf-rG-zhA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="unX-rp-4TM"/>
+                <constraint firstItem="MPL-Q4-j3h" firstAttribute="centerY" secondItem="YRf-rG-zhA" secondAttribute="centerY" id="vun-P3-01E"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -45,7 +60,7 @@
                 <outlet property="tableView" destination="Ij4-LY-jkg" id="BZC-Ud-xuH"/>
                 <outlet property="textField" destination="YRf-rG-zhA" id="7fe-so-xMt"/>
             </connections>
-            <point key="canvasLocation" x="16" y="-70.5"/>
+            <point key="canvasLocation" x="350" y="-169"/>
         </view>
     </objects>
 </document>

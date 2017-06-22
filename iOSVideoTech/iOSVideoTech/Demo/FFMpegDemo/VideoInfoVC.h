@@ -6,8 +6,8 @@
 //  Copyright © 2017年 ZhongSpace. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseController.h"
 
-@interface VideoInfoVC : UIViewController
+@interface VideoInfoVC : BaseController
 
 @end

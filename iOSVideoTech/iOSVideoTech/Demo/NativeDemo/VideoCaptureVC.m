@@ -33,7 +33,7 @@
 
 
 /**
- *
+ * Videotoolbox编码对象
  */
 @property(nonatomic,strong)VTBEncoder * encoder;
 

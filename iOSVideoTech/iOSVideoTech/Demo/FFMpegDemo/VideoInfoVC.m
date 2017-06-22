@@ -30,18 +30,24 @@ static NSString * cellID = @"cellID";
 
 @implementation VideoInfoVC
 
+#warning TODO tableView高度和代理问题
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
     VideoInfoView * videoInfoView = [VideoInfoView videoInfoView];
-    videoInfoView.frame = self.view.bounds;
     videoInfoView.dataSource = self;
     videoInfoView.delegate = self;
     [self.view addSubview:videoInfoView];
     self.videoInfoView = videoInfoView;
-    
-    
+    [self setupFFMpeg];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.videoInfoView.frame = self.view.bounds;
 }
 
 -(void)setupFFMpeg
@@ -51,6 +57,15 @@ static NSString * cellID = @"cellID";
     
     //获取解码器
     _pFormatCtx = avformat_alloc_context();
+    
+    self.videoInfoView.textDidChangeBlock = ^(NSString *text){
+        
+        if(avformat_open_input(&_pFormatCtx, text.UTF8String, NULL, NULL)!=0){
+            
+            [self showAlert:@"不能打开流"];
+        };
+        
+    };
     
 }
 
@@ -67,7 +82,6 @@ static NSString * cellID = @"cellID";
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    
     return cell;
 }
 

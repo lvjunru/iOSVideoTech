@@ -13,7 +13,7 @@
 
 +(instancetype)videoInfoView;
 
-@property(nonatomic,copy) void(^textDidChange)(NSString *text);
+@property(nonatomic,copy) void(^textDidChangeBlock)(NSString *text);
 
 @property(nonatomic,weak)id<UITableViewDelegate> delegate;
 

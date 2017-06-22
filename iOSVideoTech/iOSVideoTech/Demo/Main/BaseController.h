@@ -10,4 +10,7 @@
 
 @interface BaseController : UIViewController
 
+
+-(void)showAlert:(NSString *)msg;
+
 @end
