@@ -28,6 +28,10 @@
 		422E8C081EF7C5AC00AAA50F /* iOSVideoTechConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C071EF7C5AC00AAA50F /* iOSVideoTechConst.m */; };
 		422E8C0B1EF7C71C00AAA50F /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422E8C0A1EF7C71C00AAA50F /* BaseController.m */; };
 		423DB24D1EEA9D6F00101744 /* SPS_FileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 423DB24C1EEA9D6F00101744 /* SPS_FileTool.m */; };
+		42AC6D531EFA4F2D00BEAE34 /* VideoInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC6D521EFA4F2D00BEAE34 /* VideoInfoVC.m */; };
+		42AC6D561EFA861F00BEAE34 /* VideoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC6D551EFA861F00BEAE34 /* VideoInfoModel.m */; };
+		42AC6D5A1EFA875100BEAE34 /* VideoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC6D581EFA875100BEAE34 /* VideoInfoView.m */; };
+		42AC6D5B1EFA875100BEAE34 /* VideoInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AC6D591EFA875100BEAE34 /* VideoInfoView.xib */; };
 		42E7A9311ECD2D5A004D5EE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9301ECD2D5A004D5EE6 /* main.m */; };
 		42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9331ECD2D5A004D5EE6 /* AppDelegate.m */; };
 		42E7A9371ECD2D5A004D5EE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7A9361ECD2D5A004D5EE6 /* ViewController.m */; };
@@ -110,6 +114,13 @@
 		422E8C0A1EF7C71C00AAA50F /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		423DB24B1EEA9D6F00101744 /* SPS_FileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPS_FileTool.h; sourceTree = "<group>"; };
 		423DB24C1EEA9D6F00101744 /* SPS_FileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPS_FileTool.m; sourceTree = "<group>"; };
+		42AC6D511EFA4F2D00BEAE34 /* VideoInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoInfoVC.h; sourceTree = "<group>"; };
+		42AC6D521EFA4F2D00BEAE34 /* VideoInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoInfoVC.m; sourceTree = "<group>"; };
+		42AC6D541EFA861F00BEAE34 /* VideoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoInfoModel.h; sourceTree = "<group>"; };
+		42AC6D551EFA861F00BEAE34 /* VideoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoInfoModel.m; sourceTree = "<group>"; };
+		42AC6D571EFA875100BEAE34 /* VideoInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoInfoView.h; sourceTree = "<group>"; };
+		42AC6D581EFA875100BEAE34 /* VideoInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoInfoView.m; sourceTree = "<group>"; };
+		42AC6D591EFA875100BEAE34 /* VideoInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoInfoView.xib; sourceTree = "<group>"; };
 		42E7A92C1ECD2D5A004D5EE6 /* iOSVideoTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVideoTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E7A9301ECD2D5A004D5EE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42E7A9321ECD2D5A004D5EE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -294,6 +305,9 @@
 		422E8BCC1EF7B2D000AAA50F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				42AC6D571EFA875100BEAE34 /* VideoInfoView.h */,
+				42AC6D581EFA875100BEAE34 /* VideoInfoView.m */,
+				42AC6D591EFA875100BEAE34 /* VideoInfoView.xib */,
 				422E8BDA1EF7B5D000AAA50F /* ChangeToH264View.h */,
 				422E8BDB1EF7B5D000AAA50F /* ChangeToH264View.m */,
 				422E8BDC1EF7B5D000AAA50F /* ChangeToH264View.xib */,
@@ -308,6 +322,8 @@
 				422E8BD81EF7B5C500AAA50F /* ChangeToH264VC.m */,
 				422E8BFA1EF7BB2C00AAA50F /* FFMpegCatalogueVC.h */,
 				422E8BFB1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m */,
+				42AC6D511EFA4F2D00BEAE34 /* VideoInfoVC.h */,
+				42AC6D521EFA4F2D00BEAE34 /* VideoInfoVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -315,6 +331,8 @@
 		422E8BCE1EF7B2E200AAA50F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42AC6D541EFA861F00BEAE34 /* VideoInfoModel.h */,
+				42AC6D551EFA861F00BEAE34 /* VideoInfoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -823,6 +841,7 @@
 			files = (
 				42E7AA001ECD322A004D5EE6 /* SVProgressHUD.bundle in Resources */,
 				420161971EEFCC7D0074695D /* Titanic.ts in Resources */,
+				42AC6D5B1EFA875100BEAE34 /* VideoInfoView.xib in Resources */,
 				42E7A9FC1ECD322A004D5EE6 /* LICENSE.txt in Resources */,
 				422E8BDE1EF7B5D000AAA50F /* ChangeToH264View.xib in Resources */,
 				42E7A93F1ECD2D5A004D5EE6 /* LaunchScreen.storyboard in Resources */,
@@ -858,6 +877,7 @@
 				42E7A9371ECD2D5A004D5EE6 /* ViewController.m in Sources */,
 				422E8BDD1EF7B5D000AAA50F /* ChangeToH264View.m in Sources */,
 				42E7A9FF1ECD322A004D5EE6 /* SVProgressAnimatedView.m in Sources */,
+				42AC6D561EFA861F00BEAE34 /* VideoInfoModel.m in Sources */,
 				422E8BE71EF7B5EA00AAA50F /* CellModel.m in Sources */,
 				422E8BF81EF7B60B00AAA50F /* VideoCaptureView.m in Sources */,
 				42E7A9341ECD2D5A004D5EE6 /* AppDelegate.m in Sources */,
@@ -866,6 +886,7 @@
 				423DB24D1EEA9D6F00101744 /* SPS_FileTool.m in Sources */,
 				422E8C081EF7C5AC00AAA50F /* iOSVideoTechConst.m in Sources */,
 				422E8C0B1EF7C71C00AAA50F /* BaseController.m in Sources */,
+				42AC6D5A1EFA875100BEAE34 /* VideoInfoView.m in Sources */,
 				42E7A9FE1ECD322A004D5EE6 /* SVIndefiniteAnimatedView.m in Sources */,
 				422E8BD91EF7B5C500AAA50F /* ChangeToH264VC.m in Sources */,
 				422E8BD61EF7B4E600AAA50F /* VTBEncoder.m in Sources */,
@@ -879,6 +900,7 @@
 				422E8BFC1EF7BB2C00AAA50F /* FFMpegCatalogueVC.m in Sources */,
 				42E7A9311ECD2D5A004D5EE6 /* main.m in Sources */,
 				422E8BF71EF7B60B00AAA50F /* VideoCaptureVC.m in Sources */,
+				42AC6D531EFA4F2D00BEAE34 /* VideoInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

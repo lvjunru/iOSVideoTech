@@ -70,9 +70,7 @@
     //启动FFMPEG模块,调用avcodec_register_all()注册编解码器,注册一堆东西，看不懂-.-!
     av_register_all();
 
-    //注册网络协议()
-//    avformat_network_init();
-    
+    //创建FFMPEG解封装（flv，mp4，rmvb，avi）功能的结构体
     pFormatCtx = avformat_alloc_context();
     
 }

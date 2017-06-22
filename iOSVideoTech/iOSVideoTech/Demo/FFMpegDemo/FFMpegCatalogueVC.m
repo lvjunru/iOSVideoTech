@@ -18,19 +18,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CellModel * VideoInfoM = [[CellModel alloc] init];
-    VideoInfoM.Navtitle = @"FFMpeg获取视频信息";
-    VideoInfoM.cellTitle = @"FFMpeg获取视频信息";
+    CellModel * videoInfoM = [[CellModel alloc] init];
+    videoInfoM.Navtitle = @"FFMpeg获取视频信息";
+    videoInfoM.cellTitle = @"FFMpeg获取视频信息";
     
-    CellModel * ChangeToH264M = [[CellModel alloc] init];
+    CellModel * changeToH264M = [[CellModel alloc] init];
+    changeToH264M.Navtitle = @"FFMpeg读取视频H264裸流";
+    changeToH264M.cellTitle = @"FFMpeg读取视频H264裸流";
     
-    ChangeToH264M.Navtitle = @"FFMpeg读取视频H264裸流";
-    ChangeToH264M.cellTitle = @"FFMpeg读取视频H264裸流";
     
-    [self.dataArray addObject:VideoInfoM];
     
-    [self.dataArray addObject:ChangeToH264M];
+    CellModel * videoPlay = [[CellModel alloc] init];
+    videoPlay.Navtitle = @"FFMpeg获取视频流并且播放";
+    videoPlay.cellTitle = @"FFMpeg获取视频流并且播放";
     
+    
+    CellModel * audioStream = [[CellModel alloc] init];
+    audioStream.Navtitle = @"FFMpeg获取音频流并且播放";
+    audioStream.cellTitle = @"FFMpeg获取音频流并且播放";
+    
+    
+    CellModel * subTitleStream = [[CellModel alloc] init];
+    subTitleStream.Navtitle = @"FFMpeg获取字幕";
+    subTitleStream.cellTitle = @"FFMpeg获取字幕";
+    
+    
+    
+    [self.dataArray addObject:videoInfoM];
+    [self.dataArray addObject:changeToH264M];
+    [self.dataArray addObject:videoPlay];
+    [self.dataArray addObject:audioStream];
+    [self.dataArray addObject:subTitleStream];
     
 }
 
