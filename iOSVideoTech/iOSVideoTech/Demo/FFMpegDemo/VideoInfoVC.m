@@ -35,6 +35,7 @@ static NSString * cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     VideoInfoView * videoInfoView = [VideoInfoView videoInfoView];
     videoInfoView.dataSource = self;
